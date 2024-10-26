@@ -8,3 +8,223 @@
   text-decoration: none;
   list-style: none;
 }
+
+:root
+{
+    --msu-green: #16423c;
+    --bright-gray: #e9efec;
+    --c1: #0b0b0b;
+    --c2: #a3fda1;
+    --c3: #2d2d2d;
+    --c4: #925ff0;
+    --c4b: #a575ff;
+    --c5: #f9fafe;
+    --c6: #105d5e;
+    --c7: #b3eda9;
+    --c8: #009a6e;
+    --c9: #293e33;
+    --c10: #ebfadb;
+    --c11: #767f7d;
+    --c12: #c2cbc9;
+    --dark1: #161616;
+    --dark2: #1d1c1c;
+    --dark3: #232323;
+    --dark4: #2c2c2c;
+    --dark5: #363636;
+    --dark6: #454444;
+    --dark7: #bcbdbd;
+    --c1b: #021b1a;
+    --c2b: #032221;
+    --c3b: #03624c;
+    --c4b: #2cc295;
+    --c5b: #00df81;
+    --c6b: #f1f7f6;
+    --c7b: #707d7d;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--c1b);
+    padding: 0.7rem 2% 0.7rem;
+    z-index: 10; 
+}
+
+
+#header h2
+{
+    color: var(--bright-gray);
+}
+#header #head-nav
+{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+
+}
+
+#header #head-nav a
+{
+    padding: 0.3rem 0;
+    transition: 0.3s ease;
+    border-bottom: 2px solid transparent;
+    color: var(--bright-gray);
+    font-weight: 16px;
+    font-weight: 500;
+    margin: 0 1rem;
+}
+#header #head-nav a:hover,
+#header #head-nav a.active
+{
+    border-bottom: 2px solid var(--c2);
+}
+
+
+
+footer 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #282c34; 
+    color: #ffffff; 
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contact-info,
+.social-media,
+.about-us,
+.links,
+.policy,
+.copyright {
+    margin-bottom: 15px; /* Khoảng cách giữa các phần */
+}
+
+.social-media a {
+    margin: 0 10px; /* Khoảng cách giữa các link mạng xã hội */
+    text-decoration: none; /* Xóa gạch chân */
+    color: #61dafb; /* Màu chữ cho link mạng xã hội */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.links a,
+.policy a {
+    margin: 0 10px; /* Khoảng cách giữa các link */
+    text-decoration: none; /* Xóa gạch chân */
+    color: #ffffff; /* Màu chữ cho các link */
+}
+
+.links a:hover,
+.policy a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.about-us p {
+    font-size: 14px; /* Kích thước chữ cho phần giới thiệu */
+}
+
+.copyright p {
+    font-size: 12px; /* Kích thước chữ cho phần bản quyền */
+    margin-top: 10px; /* Khoảng cách trên */
+}
+
+
+
+
+.member-container 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    gap: 2rem; 
+    padding: 0 2rem;
+    height: 100%;
+    min-height: calc(100vh - 53.97px);
+}
+
+.member-container .member-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(148, 148, 255);
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.member-container .member-box:hover
+{
+    box-shadow: 5px 5px 1px 1px rgba(0,0,0,0.3);
+    transform: translate(-5px, -5px);
+}
+
+.member-box .img-container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+}
+
+.member-box .img-container img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    margin-top: 2rem; 
+
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.member-role,
+.member-position {
+    font-size: 14px; 
+    color: #494949;
+    margin-top: 0.5rem;
+}
+
+.member-box button
+{
+    padding: 0.5rem 1.4rem;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 2rem;
+    cursor: pointer;
+}
+
